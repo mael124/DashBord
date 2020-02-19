@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-white: white;
+    --color-black: black;
+    --color-grey: #cecece;
+    --color-primary: #7385f2;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-- SideBar --*/
+.sideBar
+{
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--color-white);
+    border-right: 1px solid var(--color-grey);
+}
+
+.sideBar__Logo
+{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.sideBar__Circle
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: var(--color-primary);
+}
+
+.sideBar__Logo h1
+{
+    color: var(--color-primary);
+}
+
+.sideBar__Menu ul li
+{
+    list-style: none;
+    padding: 18px;
+    transition: all .3s; 
+}
+
+.sideBar__Menu ul li:hover
+{
+    border-right: 4px solid var(--color-primary);
+    background-color: aliceblue;
+}
+
+.sideBar__Menu ul li a
+{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.sideBar__Menu ul li:hover a
+{
+    color: var(--color-primary);
+}
+
+
+/*-- mainContent --*/
+.mainContent
+{
+    background-color: #F4F4FA;
+    height: 100vh;
+    margin-left: 260px;
+}
+
+/*-- NavBar --*/
+.nav
+{
+    height: 70px;
+    background: var(--color-white);
+    padding: 0 30px;
+}
+
+.user
+{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%; 
+   background-color: var(--color-primary);
+   float: right;
+   margin-top: 10px;
+}
+
+/*-- boxContent --*/
+.boxContent
+{
+    padding: 70px 30px;
+}
+
+/*-- Fisrt Row */
+.firstRow , .secondRow
+{
+    display: flex;
+}
+
+.cardOne, .cardTwo, .cardThree, .cardFour
+{
+    flex: 1;
+    height: 180px;
+    border-radius: 7px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.cardOne
+{
+    background: linear-gradient(90deg,#9862F9,#8AAAFE);
+}
+
+.cardTwo
+{
+    background: linear-gradient(90deg,#fdb4b1,#ff7b9e);
+}
+
+.cardThree
+{
+    background: linear-gradient(90deg,#ffc88c,#ff9757);
+}
+
+.cardFour
+{
+    background: linear-gradient(90deg,#1d72fe,#6998ff);
+}
+
+.description
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: var(--color-white);
+}
+
+.description h3
+{
+    font-size: 43px;
+}
+
+/*-- Second Row */
+.secondRow
+{
+    margin-top: 50px;
+}
+
+.card__Chart
+{
+    flex: 1;
+    margin-right: 25px;
+    height: 500px;
+    background-color: var(--color-white);
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px -18px rgba(0, 0, 0, 0.55);
+}
+
+
+.ThirdRow
+{
+    height: 120px;
+    width: 100%;
+    margin-right: 28px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 30px -18px rgba(0, 0, 0, 0.55);
+    margin-top: 50px;
+    border-radius: 7px;
+}
